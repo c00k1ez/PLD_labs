@@ -65,3 +65,4 @@ set_global_assignment -name VERILOG_FILE Shift_reg_left_4bit.v
 set_global_assignment -name VERILOG_FILE Shift_reg_dir_4bit.v	
 set_global_assignment -name VECTOR_WAVEFORM_FILE Shift_reg_dir_4bit.vwf	
 set_global_assignment -name VERILOG_FILE Personal_task.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Personal_task.vwf	
