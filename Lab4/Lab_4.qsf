@@ -53,16 +53,16 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation	
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation	
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF	
-set_global_assignment -name VERILOG_FILE D_latch.v	
+set_global_assignment -name VERILOG_FILE src/D_latch.v	
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveforms/RS_trig.vwf	
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveforms/D_latch.vwf	
-set_global_assignment -name VERILOG_FILE D_flip_flop.v	
+set_global_assignment -name VERILOG_FILE src/D_flip_flop.v	
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveforms/D_flip_flop.vwf	
-set_global_assignment -name VERILOG_FILE D_trigger_register.v	
-set_global_assignment -name VERILOG_FILE Counter_8bit.v	
+set_global_assignment -name VERILOG_FILE src/D_trigger_register.v	
+set_global_assignment -name VERILOG_FILE src/Counter_8bit.v	
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveforms/Counter_8bit.vwf	
-set_global_assignment -name VERILOG_FILE Shift_reg_left_4bit.v	
-set_global_assignment -name VERILOG_FILE Shift_reg_dir_4bit.v	
+set_global_assignment -name VERILOG_FILE src/Shift_reg_left_4bit.v	
+set_global_assignment -name VERILOG_FILE src/Shift_reg_dir_4bit.v	
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveforms/Shift_reg_dir_4bit.vwf	
-set_global_assignment -name VERILOG_FILE Personal_task.v
+set_global_assignment -name VERILOG_FILE src/Personal_task.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveforms/Personal_task.vwf	
