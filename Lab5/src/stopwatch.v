@@ -31,12 +31,12 @@ output reg [6:0] HEX3
 	end
 	
 	Device_running_ctrl ctrl_module (.CLK(CLK_27), 
-												.START_STOP(KEY[0]), 
-												.device_running(device_running));
+					 .START_STOP(KEY[0]), 
+					 .device_running(device_running));
 	Hundredth_of_second_cnt hundredth_module (.CLK(CLK_27),
-															.RESET(KEY[1]), 
-															.device_running(device_running),
-															.hundredth_of_second_passed(hundredth_of_second_passed));
+						  .RESET(KEY[1]), 
+						  .device_running(device_running),
+						  .hundredth_of_second_passed(hundredth_of_second_passed));
 	
 	assign tenth_of_second_counted = (hundredth_of_second == 7'd9);
 	assign unit_of_second_counted = (tenth_of_second == 7'd9);
