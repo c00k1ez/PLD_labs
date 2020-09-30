@@ -52,7 +52,7 @@ module miriscv_alu(
 				end
 			`ALU_LTS:
 				begin
-					result_o <= (operand_a_i < operand_b_i) ? 1 : 0;
+					result_o <= ($signed(operand_a_i) < $signed(operand_b_i)) ? 1 : 0;
 					comparison_result_o <= result_o;
 				end
 			`ALU_LTU:
@@ -62,7 +62,7 @@ module miriscv_alu(
 				end
 			`ALU_GES:
 				begin
-					result_o <= (operand_a_i >= operand_b_i) ? 1 : 0;
+					result_o <= ($signed(operand_a_i) >= $signed(operand_b_i)) ? 1 : 0;
 					comparison_result_o <= result_o;
 				end
 			`ALU_GEU:
